@@ -1,0 +1,204 @@
+@import "param";
+
+body {
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 53.5rem;
+
+  @media (max-width: 48em) {
+    padding-bottom: 217rem;
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  &__block {
+    padding: 6.5rem 0;
+    border-top: 2px solid #CCCCCC;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__box {
+    flex: 25%;
+    margin-right: 5rem;
+  }
+
+  &__logo {
+    display: block;
+    width: 31.1rem;
+    height: 3.6rem;
+    margin-bottom: 6.5rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__list {
+    &:not(:last-child) {
+      margin-bottom: 6.5rem;
+    }
+  }
+
+  &__list-item {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+
+    > a {
+      display: block;
+    }
+  }
+
+  &__list-name {
+    margin-bottom: 2.8rem;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 2.9rem;
+    text-transform: uppercase;
+  }
+
+  &__copyright {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+  }
+
+  &__social {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+
+    > svg {
+      width: 100%;
+      height: 100%;
+
+      path {
+        fill: $dark;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+
+    &--blue {
+      &:hover {
+        path {
+          fill: #2020ff;
+          fill-opacity: 1;
+        }
+      }
+    }
+
+    &--azure {
+      &:hover {
+        path {
+          fill: #008cff;
+          fill-opacity: 1;
+        }
+      }
+    }
+
+    &--red {
+      &:hover {
+        path {
+          fill: #ff0044;
+          fill-opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .footer {
+    &__block {
+      padding: 12rem 0;
+    }
+
+    &__container {
+      display: block;
+
+      &--bottom {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    &__box {
+      margin-right: 0;
+
+      &:not(:last-child) {
+        margin-bottom: 12rem;
+      }
+    }
+
+    &__logo {
+      width: 43.2rem;
+      height: 5rem;
+      margin-bottom: 0;
+    }
+
+    &__list {
+      &:not(:last-child) {
+        margin-bottom: 6.5rem;
+      }
+    }
+
+    &__list-item {
+      font-size: 3rem;
+      line-height: 3.5rem;
+
+      &:not(:last-child) {
+        margin-bottom: 3rem;
+      }
+    }
+
+    &__list-name {
+      margin-bottom: 5rem;
+      font-size: 3.8rem;
+      line-height: 4.3rem;
+    }
+
+    &__copyright {
+      order: 2;
+      font-weight: 300;
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
+
+    &__socials {
+      order: 1;
+      margin-bottom: 7rem;
+    }
+
+    &__social {
+      width: 4rem;
+      height: 4rem;
+
+      &:not(:last-child) {
+        margin-right: 3rem;
+      }
+    }
+  }
+}
