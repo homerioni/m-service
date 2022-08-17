@@ -1,25 +1,3 @@
-/*
-const reviews_slider = new Swiper('.reviews__slider', {
-    direction: 'horizontal',
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 50,
-    breakpoints: {
-        0: {},
-    },
-    pagination: {
-        el: '',
-        type: '',
-    },
-    navigation: {
-        nextEl: '',
-        prevEl: '',
-    },
-    autoplay: {
-    },
-});
-*/
-
 // Пересчет rem в px для swiper
 const rem = function (rem) {
     if ($(window).width() > 768) {
@@ -29,3 +7,44 @@ const rem = function (rem) {
         return (100/375) * (0.1 * $(window).width()) * rem;
     }
 }
+
+const mainIntroSlider = new Swiper('.main-intro__slider', {
+    direction: 'horizontal',
+    slidesPerView: 1,
+    spaceBetween: rem(5),
+
+    pagination: {
+        el: '.main-intro__progressbar',
+        type: 'progressbar',
+    },
+
+    navigation: {
+        nextEl: '.main-intro .next',
+        prevEl: '.main-intro .prev',
+    },
+
+    on: {
+        afterInit: function () {
+            let activeIndex = this.activeIndex + 1,
+                totalSlides = $('.main-intro__slide').length;
+            if (activeIndex < 10) {
+                activeIndex = '0' + String(activeIndex);
+            }
+            if (totalSlides < 10) {
+                totalSlides = '0' + String(totalSlides);
+            }
+            $('.main-intro .slider-nav__pagination').html(activeIndex + '/' + totalSlides);
+        },
+        slideChange: function () {
+            let activeIndex = this.activeIndex + 1,
+                totalSlides = $('.main-intro__slide').length;
+            if (activeIndex < 10) {
+                activeIndex = '0' + String(activeIndex);
+            }
+            if (totalSlides < 10) {
+                totalSlides = '0' + String(totalSlides);
+            }
+            $('.main-intro .slider-nav__pagination').html(activeIndex + '/' + totalSlides);
+        },
+    },
+});
