@@ -18,6 +18,28 @@
     .slider-nav__pagination {
       color: white;
     }
+
+    div.slider-nav__progressbar {
+      background-color: rgba(255, 255, 255, 0.4);
+
+      > span {
+        background-color: white;
+      }
+    }
+  }
+
+  .slider-nav__progressbar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: auto;
+    right: auto;
+    height: 2px;
+    background-color: rgba(50, 52, 57, 0.4);
+
+    > span {
+      background-color: $dark;
+    }
   }
 
   &__arrows {
