@@ -1,0 +1,151 @@
+@import "param";
+
+.map-work {
+  margin-bottom: 18rem;
+  padding: 16.6rem 0 18.1rem 0;
+  background-color: $green;
+  color: white;
+
+  &__container {
+    position: relative;
+  }
+
+  &__title {
+    margin-bottom: 4.2rem;
+    font-size: 7rem;
+    line-height: 8.1rem;
+    text-transform: uppercase;
+  }
+
+  &__desc {
+    margin-bottom: 7.4rem;
+    font-size: 2.5rem;
+    line-height: 3.1rem;
+  }
+
+  &__text-box {
+    width: 37.4rem;
+    margin-bottom: 9rem;
+    padding: 2.3rem 3.1rem 1.9rem 3.1rem;
+    background-color: #41AA6C;
+  }
+
+  &__text {
+    font-size: 2.5rem;
+    line-height: 2.9rem;
+    text-transform: uppercase;
+
+    &--small {
+      font-size: 1.6rem;
+      line-height: 1.8rem;
+      text-transform: none;
+    }
+  }
+
+  &__img-bg {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 130.5rem;
+    height: 68.9rem;
+    transform: translateY(-50%);
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__sub-text {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 20.6rem;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &__sub-text-number {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    color: white;
+
+    > span {
+      font-size: 7rem;
+      line-height: 8.1rem;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .map-work {
+    margin-bottom: 24rem;
+    padding: 12rem 0;
+
+    &__container {
+    }
+
+    &__title {
+      margin-bottom: 7rem;
+      font-size: 8rem;
+      line-height: 9.2rem;
+    }
+
+    &__desc {
+      margin-bottom: 7rem;
+      font-size: 3.8rem;
+      line-height: 4.4rem;
+    }
+
+    &__text-box {
+      width: 100%;
+      margin-bottom: 7rem;
+      padding: 4rem;
+    }
+
+    &__text {
+      font-size: 3.8rem;
+      line-height: 4.4rem;
+
+      &--small {
+        font-size: 3rem;
+        line-height: 3.5rem;
+      }
+    }
+
+    &__img-bg {
+      position: static;
+      width: calc(100% + 8rem);
+      height: 93.2rem;
+      margin: -8.4rem -4rem 4rem -4rem;
+      transform: translateY(0);
+
+      > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__sub-text {
+      position: static;
+      width: 41.2rem;
+      margin-left: auto;
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
+
+    &__sub-text-number {
+      font-size: 3rem;
+      line-height: 3.5rem;
+
+      > span {
+        font-size: 8rem;
+        line-height: 9.2rem;
+      }
+    }
+  }
+}
