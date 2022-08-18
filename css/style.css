@@ -1373,6 +1373,219 @@ body {
     line-height: 9.2rem;
   }
 }
+.objects {
+  margin-bottom: 18rem;
+}
+.objects__title-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 8rem;
+}
+.objects__title {
+  font-size: 7rem;
+  line-height: 8.1rem;
+  text-transform: uppercase;
+}
+.objects__desc {
+  width: 59rem;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  text-align: right;
+  text-transform: uppercase;
+}
+.objects__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.objects__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.objects__item:nth-child(3n+1) {
+  margin-right: 5.2rem;
+}
+.objects__item:nth-child(3n+1) .objects__img-box:before {
+  background-color: #46B974;
+}
+.objects__item:nth-child(3n+2) .objects__img-box:before {
+  background-color: #43C2BB;
+}
+.objects__item:nth-child(3n) {
+  margin-left: auto;
+}
+.objects__item:nth-child(3n) .objects__img-box:before {
+  background-color: #2089AF;
+}
+.objects__item:nth-child(n+4) {
+  margin-top: 6rem;
+}
+.objects__item-number {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  margin-right: 3.8rem;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  color: rgba(50, 52, 57, 0.5);
+}
+.objects__item-content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 44.6rem;
+  height: auto;
+  min-height: 50.4rem;
+  padding: 3.8rem 0 7rem 0;
+  background-color: #E0E3E5;
+  text-align: center;
+  overflow: hidden;
+}
+.objects__item-title {
+  width: 30rem;
+  font-size: 2.5rem;
+  line-height: 2.9rem;
+  text-transform: uppercase;
+}
+.objects__img-box {
+  position: relative;
+  width: 26.3rem;
+  height: 26.3rem;
+  border-radius: 100%;
+}
+.objects__img-box > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: inherit;
+}
+.objects__img-box:before {
+  content: "";
+  position: absolute;
+  right: 4.5rem;
+  top: 2.2rem;
+  display: block;
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 0.5rem 0 0.5rem 0;
+}
+.objects__img-text {
+  position: absolute;
+  left: 22.5rem;
+  top: 3rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  text-align: left;
+}
+.objects__img-text--number {
+  font-size: 3.3rem;
+}
+.objects__sub-text {
+  position: absolute;
+  left: 50%;
+  bottom: -2rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 5.5rem;
+  line-height: 6.3rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 48em) {
+  .objects {
+    margin-bottom: 24rem;
+  }
+  .objects__title-box {
+    display: block;
+  }
+  .objects__title {
+    margin-bottom: 7rem;
+    font-size: 8rem;
+    line-height: 9.2rem;
+  }
+  .objects__desc {
+    width: 100%;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    text-align: left;
+  }
+  .objects__cards {
+    display: block;
+  }
+  .objects__item:nth-child(3n+1) {
+    margin-right: 0;
+  }
+  .objects__item:nth-child(3n) {
+    margin-left: 0;
+  }
+  .objects__item:nth-child(n+2) {
+    margin-top: 5rem;
+  }
+  .objects__item-number {
+    margin-right: 3rem;
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  .objects__item-content {
+    width: 100%;
+    height: auto;
+    min-height: 63.6rem;
+    padding: 5rem 0 7rem 0;
+  }
+  .objects__item-title {
+    width: 75%;
+    font-size: 3.8rem;
+    line-height: 4.4rem;
+  }
+  .objects__img-box {
+    width: 33.2rem;
+    height: 33.2rem;
+  }
+  .objects__img-box:before {
+    right: 7rem;
+    top: 1.8rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 0.6rem 0 0.6rem 0;
+  }
+  .objects__img-text {
+    left: 27rem;
+    top: 3rem;
+    font-size: 3rem;
+  }
+  .objects__img-text--number {
+    font-size: 4.4rem;
+  }
+  .objects__sub-text {
+    font-size: 7rem;
+    line-height: 8rem;
+  }
+}
 body.lock {
   overflow: hidden;
 }
