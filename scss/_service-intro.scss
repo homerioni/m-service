@@ -2,6 +2,7 @@
 
 .service-intro {
   margin-bottom: 18rem;
+  margin-top: 6.5rem;
 
   &__title-box {
     display: flex;
@@ -123,6 +124,7 @@
 @media (max-width: 48em) {
   .service-intro {
     margin-bottom: 24rem;
+    margin-top: 7rem;
 
     &__title-box {
       display: block;
