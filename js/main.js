@@ -2,6 +2,9 @@
 
 $(document).ready(function () {
 
+    // Маски для input
+    $('.mask-phone').mask('+7 999 - 999 - 99 - 99');
+
     // Burger menu
     $('.header__burger-btn').click(function () {
         $('body').addClass('lock');
