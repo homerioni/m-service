@@ -1741,6 +1741,109 @@ body {
     height: 5rem;
   }
 }
+.about {
+  margin-bottom: 18rem;
+}
+.about__title {
+  margin-bottom: 5.4rem;
+  font-size: 7rem;
+  line-height: 8.1rem;
+  text-transform: uppercase;
+}
+.about__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 7rem;
+  border-top: 2px solid #CCCCCC;
+}
+.about__image-block {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 50.1rem;
+}
+.about__img-box {
+  width: 100%;
+  height: 42.3rem;
+  margin-bottom: 2.3rem;
+}
+.about__img-box > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about__img-text-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.04em;
+  color: rgba(27, 30, 31, 0.5);
+}
+.about__text-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 105.7rem;
+}
+.about__text-box {
+  width: 50.1rem;
+  font-size: 2.3rem;
+  line-height: 3rem;
+}
+
+@media (max-width: 48em) {
+  .about {
+    margin-bottom: 24rem;
+  }
+  .about__title {
+    margin-bottom: 7rem;
+    font-size: 8rem;
+    line-height: 9.2rem;
+  }
+  .about__content {
+    display: block;
+    border-top: 2px solid #CCCCCC;
+  }
+  .about__image-block {
+    width: 100%;
+    margin-bottom: 7rem;
+  }
+  .about__img-box {
+    width: 100%;
+    height: 56.6rem;
+    margin-bottom: 3rem;
+  }
+  .about__img-text-box {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  .about__text-block {
+    display: block;
+    width: 100%;
+  }
+  .about__text-box {
+    width: 100%;
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  .about__text-box:not(:last-child) {
+    margin-bottom: 3.5rem;
+  }
+}
 body.lock {
   overflow: hidden;
 }
