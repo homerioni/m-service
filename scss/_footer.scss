@@ -6,7 +6,7 @@ body {
   padding-bottom: 53.5rem;
 
   @media (max-width: 48em) {
-    padding-bottom: 217rem;
+    padding-bottom: 222.5rem;
   }
 }
 
@@ -161,7 +161,7 @@ body {
 
     &__list {
       &:not(:last-child) {
-        margin-bottom: 6.5rem;
+        margin-bottom: 12rem;
       }
     }
 

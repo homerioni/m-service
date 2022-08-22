@@ -529,7 +529,7 @@ body {
 }
 @media (max-width: 48em) {
   body {
-    padding-bottom: 217rem;
+    padding-bottom: 222.5rem;
   }
 }
 
@@ -659,7 +659,7 @@ body {
     margin-bottom: 0;
   }
   .footer__list:not(:last-child) {
-    margin-bottom: 6.5rem;
+    margin-bottom: 12rem;
   }
   .footer__list-item {
     font-size: 3rem;
@@ -1250,6 +1250,11 @@ body {
   background-color: #46B974;
   color: white;
 }
+.map-work--not-margin {
+  position: relative;
+  z-index: 1;
+  margin-bottom: -2px;
+}
 .map-work__container {
   position: relative;
 }
@@ -1263,6 +1268,7 @@ body {
   margin-bottom: 7.4rem;
   font-size: 2.5rem;
   line-height: 3.1rem;
+  text-transform: uppercase;
 }
 .map-work__text-box {
   width: 37.4rem;
@@ -1276,6 +1282,8 @@ body {
   text-transform: uppercase;
 }
 .map-work__text--small {
+  margin-bottom: 0.3rem;
+  font-weight: 300;
   font-size: 1.6rem;
   line-height: 1.8rem;
   text-transform: none;
@@ -1319,6 +1327,11 @@ body {
   .map-work {
     margin-bottom: 24rem;
     padding: 12rem 0;
+  }
+  .map-work--not-margin {
+    position: relative;
+    z-index: 1;
+    margin-bottom: -2px;
   }
   .map-work__title {
     margin-bottom: 7rem;
@@ -1647,6 +1660,7 @@ body {
   font-weight: 700;
   font-size: 1.6rem;
   line-height: 1.8rem;
+  text-transform: uppercase;
   color: #46B974;
 }
 .contacts__box-text {
