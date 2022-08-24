@@ -1303,6 +1303,131 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
 }
+.map-work__list-item {
+  position: absolute;
+  border-radius: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.map-work__list-item[city=kaliningrad] {
+  left: -0.7rem;
+  top: 47.8rem;
+}
+.map-work__list-item[city=rostov] {
+  left: 12.1rem;
+  top: 56rem;
+}
+.map-work__list-item[city=murmansk] {
+  left: 30.9rem;
+  top: 23.4rem;
+}
+.map-work__list-item[city=petrozavodsk] {
+  left: 31.9rem;
+  top: 35.5rem;
+}
+.map-work__list-item[city=moskva] {
+  left: 31.9rem;
+  top: 45.8rem;
+}
+.map-work__list-item[city=samara] {
+  left: 39.8rem;
+  top: 56.1rem;
+}
+.map-work__list-item[city=arhangelsk] {
+  left: 44.8rem;
+  top: 30.3rem;
+}
+.map-work__list-item[city=perm] {
+  left: 48.8rem;
+  top: 44rem;
+}
+.map-work__list-item[city=ufa] {
+  left: 62.7rem;
+  top: 50.9rem;
+}
+.map-work__list-item[city=ekaterinburg] {
+  left: 68.7rem;
+  top: 40.6rem;
+}
+.map-work__list-item[city=nijnevartovsk] {
+  left: 76.6rem;
+  top: 30.3rem;
+}
+.map-work__list-item[city=novosibirsk] {
+  left: 78.6rem;
+  top: 50.9rem;
+}
+.map-work__list-item[city=jakutsk] {
+  left: 92.5rem;
+  top: 26.8rem;
+}
+.map-work__list-item[city=vladivostok] {
+  left: 91.5rem;
+  top: 59.5rem;
+}
+.map-work__list-item[city=sahalinsk] {
+  left: 99.4rem;
+  top: 49.2rem;
+}
+.map-work__list-item[city=magadan] {
+  left: 106.4rem;
+  top: 37.2rem;
+}
+.map-work__city-icon {
+  position: relative;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100%;
+}
+.map-work__city-icon:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 1.2rem;
+  height: 1.2rem;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 100%;
+  background-color: white;
+}
+.map-work__city-icon:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 7.6rem;
+  height: 7.6rem;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  border-radius: 100%;
+  border: 1px solid white;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.map-work__city-icon:hover:after {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+.map-work__city-icon:hover + .map-work__city-name {
+  opacity: 1;
+}
+.map-work__city-name {
+  position: absolute;
+  left: 8rem;
+  top: 4.5rem;
+  opacity: 0;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  cursor: default;
+}
 .map-work__sub-text {
   position: absolute;
   right: 0;
@@ -1363,12 +1488,85 @@ body {
     margin: -8.4rem -4rem 4rem -4rem;
     -webkit-transform: translateY(0);
             transform: translateY(0);
+    overflow: hidden;
   }
   .map-work__img-bg > img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+    -o-object-position: -38rem;
+       object-position: -38rem;
+  }
+  .map-work__list-item {
+    position: absolute;
+    border-radius: 100%;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  .map-work__list-item[city=kaliningrad] {
+    display: none;
+  }
+  .map-work__list-item[city=rostov] {
+    display: none;
+  }
+  .map-work__list-item[city=murmansk] {
+    left: 3.8rem;
+    top: 32.8rem;
+  }
+  .map-work__list-item[city=petrozavodsk] {
+    left: 5.2rem;
+    top: 49rem;
+  }
+  .map-work__list-item[city=moskva] {
+    left: 5.2rem;
+    top: 63rem;
+  }
+  .map-work__list-item[city=samara] {
+    left: 16rem;
+    top: 77rem;
+  }
+  .map-work__list-item[city=arhangelsk] {
+    left: 22.8rem;
+    top: 42rem;
+  }
+  .map-work__list-item[city=perm] {
+    left: 28rem;
+    top: 60.6rem;
+  }
+  .map-work__list-item[city=ufa] {
+    left: 46.7rem;
+    top: 69.9rem;
+  }
+  .map-work__list-item[city=ekaterinburg] {
+    left: 55rem;
+    top: 56rem;
+  }
+  .map-work__list-item[city=nijnevartovsk] {
+    left: 65.6rem;
+    top: 42rem;
+  }
+  .map-work__list-item[city=novosibirsk] {
+    left: 68.4rem;
+    top: 70rem;
+  }
+  .map-work__list-item[city=jakutsk] {
+    display: none;
+  }
+  .map-work__list-item[city=vladivostok] {
+    display: none;
+  }
+  .map-work__list-item[city=sahalinsk] {
+    display: none;
+  }
+  .map-work__list-item[city=magadan] {
+    display: none;
+  }
+  .map-work__city-icon:before {
+    width: 1.6rem;
+    height: 1.6rem;
   }
   .map-work__sub-text {
     position: static;

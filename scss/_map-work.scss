@@ -66,6 +66,148 @@
     }
   }
 
+  &__list {}
+
+  &__list-item {
+    position: absolute;
+    border-radius: 100%;
+    user-select: none;
+
+    &[city=kaliningrad] {
+      left: -0.7rem;
+      top: 47.8rem;
+    }
+
+    &[city=rostov] {
+      left: 12.1rem;
+      top: 56rem;
+    }
+
+    &[city=murmansk] {
+      left: 30.9rem;
+      top: 23.4rem;
+    }
+
+    &[city=petrozavodsk] {
+      left: 31.9rem;
+      top: 35.5rem;
+    }
+
+    &[city=moskva] {
+      left: 31.9rem;
+      top: 45.8rem;
+    }
+
+    &[city=samara] {
+      left: 39.8rem;
+      top: 56.1rem;
+    }
+
+    &[city=arhangelsk] {
+      left: 44.8rem;
+      top: 30.3rem;
+    }
+
+    &[city=perm] {
+      left: 48.8rem;
+      top: 44rem;
+    }
+
+    &[city=ufa] {
+      left: 62.7rem;
+      top: 50.9rem;
+    }
+
+    &[city=ekaterinburg] {
+      left: 68.7rem;
+      top: 40.6rem;
+    }
+
+    &[city=nijnevartovsk] {
+      left: 76.6rem;
+      top: 30.3rem;
+    }
+
+    &[city=novosibirsk] {
+      left: 78.6rem;
+      top: 50.9rem;
+    }
+
+    &[city=jakutsk] {
+      left: 92.5rem;
+      top: 26.8rem;
+    }
+
+    &[city=vladivostok] {
+      left: 91.5rem;
+      top: 59.5rem;
+    }
+
+    &[city=sahalinsk] {
+      left: 99.4rem;
+      top: 49.2rem;
+    }
+
+    &[city=magadan] {
+      left: 106.4rem;
+      top: 37.2rem;
+    }
+  }
+
+  &__city-icon {
+    position: relative;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 1.2rem;
+      height: 1.2rem;
+      transform: translate(-50%, -50%);
+      border-radius: 100%;
+      background-color: white;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 7.6rem;
+      height: 7.6rem;
+      transform: translate(-50%, -50%) scale(0);
+      border-radius: 100%;
+      border: 1px solid white;
+      transition: transform 0.3s ease;
+    }
+
+    &:hover {
+      &:after {
+        transform: translate(-50%, -50%) scale(1);
+      }
+
+      & + .map-work__city-name {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__city-name {
+    position: absolute;
+    left: 8rem;
+    top: 4.5rem;
+    opacity: 0;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: opacity 0.3s ease;
+    cursor: default;
+  }
+
   &__sub-text {
     position: absolute;
     right: 0;
@@ -137,12 +279,109 @@
       height: 93.2rem;
       margin: -8.4rem -4rem 4rem -4rem;
       transform: translateY(0);
+      overflow: hidden;
 
       > img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        object-position: -38rem;
       }
+    }
+
+    &__list {}
+
+    &__list-item {
+      position: absolute;
+      border-radius: 100%;
+      user-select: none;
+
+      &[city=kaliningrad] {
+        display: none;
+      }
+
+      &[city=rostov] {
+        display: none;
+      }
+
+      &[city=murmansk] {
+        left: 3.8rem;
+        top: 32.8rem;
+      }
+
+      &[city=petrozavodsk] {
+        left: 5.2rem;
+        top: 49rem;
+      }
+
+      &[city=moskva] {
+        left: 5.2rem;
+        top: 63rem;
+      }
+
+      &[city=samara] {
+        left: 16rem;
+        top: 77rem;
+      }
+
+      &[city=arhangelsk] {
+        left: 22.8rem;
+        top: 42rem;
+      }
+
+      &[city=perm] {
+        left: 28rem;
+        top: 60.6rem;
+      }
+
+      &[city=ufa] {
+        left: 46.7rem;
+        top: 69.9rem;
+      }
+
+      &[city=ekaterinburg] {
+        left: 55rem;
+        top: 56rem;
+      }
+
+      &[city=nijnevartovsk] {
+        left: 65.6rem;
+        top: 42rem;
+      }
+
+      &[city=novosibirsk] {
+        left: 68.4rem;
+        top: 70rem;
+      }
+
+      &[city=jakutsk] {
+        display: none;
+      }
+
+      &[city=vladivostok] {
+        display: none;
+      }
+
+      &[city=sahalinsk] {
+        display: none;
+      }
+
+      &[city=magadan] {
+        display: none;
+      }
+    }
+
+    &__city-icon {
+      &:before {
+        width: 1.6rem;
+        height: 1.6rem;
+      }
+
+      &:after {
+      }
+    }
+
+    &__city-name {
     }
 
     &__sub-text {
