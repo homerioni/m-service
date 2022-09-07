@@ -15,4 +15,15 @@ $(document).ready(function () {
         $('.header__burger-menu').removeClass('active');
     });
 
+    // Pop-up close
+    $('.pop-up .close').click(function () {
+        $(this).parents('.pop-up').fadeOut(150);
+    });
+
+    // Modal-send open
+    $('.pop-up-send').click(function () {
+        $('body').addClass('lock');
+        $('.modal-send').css('display', 'flex').hide().fadeIn();
+    });
+
 });
