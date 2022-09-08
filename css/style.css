@@ -338,7 +338,6 @@ input[type=number] {
   max-height: 90%;
   padding: 10rem 37rem 10rem 12.5rem;
   background-color: white;
-  overflow: scroll;
 }
 .modal-send__close {
   position: absolute;

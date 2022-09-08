@@ -18,6 +18,7 @@ $(document).ready(function () {
     // Pop-up close
     $('.pop-up .close').click(function () {
         $(this).parents('.pop-up').fadeOut(150);
+        $('body').removeClass('lock');
     });
 
     // Modal-send open
