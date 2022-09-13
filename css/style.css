@@ -1418,6 +1418,13 @@ body {
   left: 12.1rem;
   top: 56rem;
 }
+.map-work__list-item[city=peterburg] {
+  left: 29rem;
+  top: 40.6rem;
+}
+.map-work__list-item[city=peterburg] .map-work__city-name {
+  top: 2.5rem;
+}
 .map-work__list-item[city=murmansk] {
   left: 30.9rem;
   top: 23.4rem;
@@ -1614,6 +1621,10 @@ body {
   .map-work__list-item[city=murmansk] {
     left: 3.8rem;
     top: 32.8rem;
+  }
+  .map-work__list-item[city=peterburg] {
+    left: 1.2rem;
+    top: 56rem;
   }
   .map-work__list-item[city=petrozavodsk] {
     left: 5.2rem;

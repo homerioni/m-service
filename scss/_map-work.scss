@@ -83,6 +83,15 @@
       top: 56rem;
     }
 
+    &[city=peterburg] {
+      left: 29rem;
+      top: 40.6rem;
+
+      .map-work__city-name {
+        top: 2.5rem;
+      }
+    }
+
     &[city=murmansk] {
       left: 30.9rem;
       top: 23.4rem;
@@ -307,6 +316,11 @@
       &[city=murmansk] {
         left: 3.8rem;
         top: 32.8rem;
+      }
+
+      &[city=peterburg] {
+        left: 1.2rem;
+        top: 56rem;
       }
 
       &[city=petrozavodsk] {
